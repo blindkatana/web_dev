@@ -1,6 +1,5 @@
 import sys
 
-
 """
 Find the sum of the squares of the two largest numbers.
 
@@ -16,11 +15,14 @@ def calculate(x, y, z):
     return
 
 if __name__ == '__main__':
+    # Call this script using:
+    #   python arithmetic.py x y z
+
     # sys.argv is a list of the arguments to the python call. The first argument
     # should be the name of the file (arithmetic.py) and the other arguments
     # should be the flags and inputs for that file.
     script_name = sys.argv[0] # Unnecessary line.
-    args = sys.argv[1:end]
+    args = sys.argv[1:]
 
     # Need to cast the argument as an integer.
     print calculate(int(args[0]), int(args[1]), int(args[2]))
